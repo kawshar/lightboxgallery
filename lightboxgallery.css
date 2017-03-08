@@ -96,6 +96,7 @@
   transform: rotate(-45deg) translateY(-50%);
 }
 
+.lightboxgallery-close .lightboxgallery-hidden,
 .lightboxgallery-hidden {
   display: none;
 }
