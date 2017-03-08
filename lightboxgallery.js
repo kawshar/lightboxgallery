@@ -89,7 +89,7 @@
         }
 
         this.modal = function() {
-          $('<div id="lightboxgallery-modal" class="lightboxgallery-modal-wrapper"><a href="#" class="lightboxgallery-prev"><span></span></a><a href="#" class="lightboxgallery-next"><span></span></a><div class="lightboxgallery-modal"><a href="#" class="lightboxgallery-close">&times;</a><div class="lightboxgallery-modal-body"></div></div></div>').appendTo($('body').addClass('lightboxgallery-modal-open'));
+          $('<div id="lightboxgallery-modal" class="lightboxgallery-modal-wrapper"><a href="#" class="lightboxgallery-prev"><span></span></a><a href="#" class="lightboxgallery-next"><span></span></a><div class="lightboxgallery-modal"><a href="#" class="lightboxgallery-close lightboxgallery-hidden">&times;</a><div class="lightboxgallery-modal-body"></div></div></div>').appendTo($('body').addClass('lightboxgallery-modal-open'));
           this.modal = $('#lightboxgallery-modal');
           this.navNext = this.modal.find('.lightboxgallery-next');
           this.navPrev = this.modal.find('.lightboxgallery-prev');
@@ -210,6 +210,7 @@
                   galleryHtml += '</div>'
 
                   $('.lightboxgallery-modal-body').html(galleryHtml);
+                  that.modal.find('.lightboxgallery-close').removeClass('lightboxgallery-hidden');
                   that.loaded = false;
                 });
 

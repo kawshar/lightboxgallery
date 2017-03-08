@@ -96,6 +96,10 @@
   transform: rotate(-45deg) translateY(-50%);
 }
 
+.lightboxgallery-hidden {
+  display: none;
+}
+
 .lightboxgallery-close,
 .lightboxgallery-close:hover,
 .lightboxgallery-close:active,
